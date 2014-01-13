@@ -1,0 +1,31 @@
+\documentclass[../main/FlatMarginalStability.tex]{subfiles} 
+\begin{document}
+
+
+\section{Spatial Eigenvalues of linear problem}
+The existance of a Lyaponav functional for the problem at hand garuantees that the solution will always approach a steady state in time.  This motivates a focus on the time-independent problem, and the spatial eigenvalues can provide insight into the structure of the periodic and localized states.   We use the convention here that the real part of the eigenvalue corresponds to an exponentially growing or decaying solution while the imaginary part corresponds to an oscillatory solution.  We note that we focus on the behavior near $r=0$ throughout this section.  There are other bifurcations that occur and should be investigated more completely, namely near $r=1$.
+
+In the case of the original SHE, the spatial problem undergoes a Hamilton-Hopf bifurcation at the critical value of the forcing parameter~\cite{}.  The eigenvalues go from pure imaginary to developing a real part after the two sets of pairs undergo collisions at $\pm i$ as is shown in Fig.~\ref{fig:eigsh}.
+\FIGeigsh
+When $r < 0$, the presence of eigenvalues with nonzero real parts indicate the existence of growing and decaying oscillatory solutions, which can manifest as a modulation of the patterned state.  This is a hint that localized solutions can form in this region of parameter space.  For $r >0$, we see that no sutch modulated solutions can form in the linear problem.  The eigenvalues in this region indicate the possibility of the superpositon of two oscillatory solutions with slightly different frequencies.  This kind of solution would have  a large scale periodic modulation from the beating of these two frequencies.
+
+Because the modified equation (Eq.~\ref{eq:flatSH}) is an 8th order, there are four addtional spatial eiganvalues and the two sets of four collide at $\pm i$ at $r=0$ (see Fig.~\ref{fig:eigfsh}).  We can unfold the degenaracy into two collsions of pairs of eigenvalues by varying $r$ with a nonzero value of either $\alpha$ or $\beta$.  
+\FIGeigfsh
+We see that for $r<0$, the eigenvalues have a slightly different oscillatory frequency as well as nonzero real parts.  This could indicate the existence of modulated solutions with a beat frequency of oscillation in the envelope.   This could be the explanaition for the solutions found numerically that lead to localized doubly-periodic solutions shown in the numerical results section.  For $r>0$, we still have eigenvalues with different oscillatory frequencies and eigenvalues that have a nonzero real part, but not both at the same time.  Thus there are no longer solutions with a beating that can have an overall modulation. 
+
+ With a nonzero value of $\alpha$, the first collision happens between pairs of eigenvalues off of the imaginary axis for a negative value of $r$. The condition defining the value for $r$ at which this collision occurs in terms of of $\alpha$ and the other parameters of the system is given by:
+\begin{equation}
+\end{equation}
+We can see that if we fix $r$ at a small negative value and then increase $\alpha$ from zero to one, i.e. take the marginal stability curve from quartic to quadratic, that there will be a collision of eigenvalues afterwhich four of them will go off to $\pm \infty$.  The remaining four will behave just like the four eigenvalues of the Swift-Hohenberg equation.  For a given $r$, the value of $\alpha$ where this collision occurs is given by   
+\begin{equation}
+\end{equation}
+
+A Hamilton-Hopf bifurcation then occurs at $r=0$ just as would happen in the SHE, and the additional eigenvalues that were not present in the SHE approach infinity.  This sequence is illustrated in Fig.~\ref{fig:eigash}.
+\FIGeigash
+A nonzero value of $\beta$ leads to a switch in the order of collisions as is shown in Fig.~\ref{fig:eigbsh}.  Four pairs of eigenvalues collide at the imaginary axis and become pure imaginary when $r=0$.  For slightly positive $r$, another collsion pair of collisions happen at $\pm i$, making two pairs of eigenvalues go back into the complex plane with a nonzero real part. 
+\FIGeigbsh
+
+
+
+
+\end{document}
