@@ -1,11 +1,83 @@
 
 %Figures
-\newcommand{\FIGmarginalstability}{
+\newcommand{\FIGmargstaba}{
 \begin{figure}[h]\center
-\includegraphics[width=60mm]{../img/MarginalStability.png}
-\caption{\label{fig:marginalstability} Linear stability of the modified Swift-Hohenberg equation with $q=2$ and $\delta=.1$.  The shaded region indicates linearly stable parameter regimes of the homogeneous solution with a forcing $r$ for a given wavenumber $k$.}
+\includegraphics[width=60mm]{../img/MargStabA.png}
+\caption{\label{fig:margstaba} Marginal stability curves for the Swift-Hohenberg equation, the modified Swift Hohenberg equation (Eq.~\ref{eq:flatSH}), and one point along the homotopy between them (Eq.~\ref{eq:homSH} with $\alpha=0.2$).  The region below each line indicates linearly stable parameter regimes of the homogeneous solution with a forcing $r$ for a given wavenumber $k$.}
 \end{figure}
 }
+\newcommand{\FIGmargstabb}{
+\begin{figure}[h]\center
+\includegraphics[width=60mm]{../img/MargStabB.png}
+\caption{\label{fig:margstabb} Marginal stability curves of Eq.~\ref{eq:collSH} for $\beta=0,0.2$, and $0.5$ . The region below each line indicates linearly stable parameter regimes of the homogeneous solution with a forcing $r$ for a given wavenumber $k$.}
+\end{figure}
+}
+
+\newcommand{\FIGeigsh}{
+\begin{figure}[h]
+  \begin{center}
+    
+      \subfloat[$r=-0.1$]{\includegraphics[width=20mm]{../img/eigSHrN.PNG}} \quad
+      \subfloat[$r=0.0$]{\includegraphics[width=20mm]{../img/eigSHr0.PNG}}\quad
+      \subfloat[$r=0.1$]{\includegraphics[width=20mm]{../img/eigSHrP.PNG}} \quad
+      
+    \caption{Spatial eigenvalues of linearization of the Swift Hohenberg equation for different values of the forcing parameter.  The system undergoes a Hamilton-Hopf bifurcation at $r=0$.}
+    \label{fig:eigsh}
+  \end{center}
+\end{figure}
+}
+
+\newcommand{\FIGeigfsh}{
+\begin{figure}[h]
+  \begin{center}
+    
+      \subfloat[r=-0.1]{\includegraphics[width=20mm]{../img/eigFSHrN.PNG}} \quad
+      \subfloat[r=0.0]{\includegraphics[width=20mm]{../img/eigFSHr0.PNG}}\quad
+      \subfloat[r=0.1]{\includegraphics[width=20mm]{../img/eigFSHrP.PNG}} \quad
+      
+    \caption{Spatial eigenvalues of linearization of the modified Swift Hohenberg equation (Eq.~\ref{eq:flatSH}). for different values of the forcing parameter.  The system undergoes a degenerate bifurcation at $r=0$.}
+    \label{fig:eigfsh}
+  \end{center}
+\end{figure}
+}
+
+\newcommand{\FIGeigash}{
+\begin{figure}[h]
+  \begin{center}
+    
+      \subfloat[r=-0.1]{\includegraphics[width=20mm]{../img/eigASHrN.PNG}} \quad
+      \subfloat[r=-0.0125]{\includegraphics[width=20mm]{../img/eigASHrCN.PNG}} \quad
+      \subfloat[r=0.0]{\includegraphics[width=20mm]{../img/eigASHr0.PNG}}\quad
+      \subfloat[r=0.1]{\includegraphics[width=20mm]{../img/eigASHrP.PNG}} \quad
+      
+    \caption{Spatial eigenvalues of linearization of Eq.~\ref{eq:homSH} with $\alpha=0.2$ for different values of the forcing parameter.  The degenerate bifurcation shown Fig.~\ref{fig:eigfsh} has unfolded into a bifurcation at $r=-0.0125$ and at $r=0$.}
+    \label{fig:eigash}
+  \end{center}
+\end{figure}
+}
+
+
+\newcommand{\FIGeigbsh}{
+\begin{figure}[h]
+  \begin{center}
+    
+      \subfloat[r=-0.1]{\includegraphics[width=20mm]{../img/eigBSHrN.PNG}} \quad
+      \subfloat[r=0.0]{\includegraphics[width=20mm]{../img/eigBSHr0.PNG}}\quad
+      \subfloat[r=0.0256]{\includegraphics[width=20mm]{../img/eigBSHrCP.PNG}} \quad
+      \subfloat[r=0.1]{\includegraphics[width=20mm]{../img/eigBSHrP.PNG}} \quad
+      
+    \caption{Spatial eigenvalues of linearization of Eq.~\ref{eq:homSH} with $\beta=0.2$ for different values of the forcing parameter.  The degenerate bifurcation shown Fig.~\ref{fig:eigfsh} has unfolded into a bifurcation  at $r=0$ and at $r=0.0256$.}
+    \label{fig:eigbsh}
+  \end{center}
+\end{figure}
+}
+
+
+
+
+
+
+
 \newcommand{\FIGbifurcationdiagramA}{
 \begin{figure}[h]\center
 \includegraphics[width=120mm]{../img/BifurcationDiagram1.png}
